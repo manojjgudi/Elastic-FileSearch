@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .content {
+        display: grid;
+        height: 30vh;
+        place-items: center;
+    }
+</style>
+<body>
+
+<div class="content">
+    <h1>Upload file </h1>
+    <form action="/upload" method="post"  enctype="multipart/form-data">
+        <div class="form-group">
+            <fieldset>
+                <legend>Segment</legend>
+                <input type="text" id="fileName" placeholder=" fileName" name="fileName" required/>
+                <label> File to upload  </label>
+                 <input type="file" placeholder="file to upload" name="file" id="file">
+<!--                <label> OR </label>-->
+<!--                <label> S3Url </label>-->
+<!--                <input type="text" placeholder="S3url for segment" name="S3url" id="S3url">-->
+            </fieldset>
+            <div>
+                <button type="submit">Upload</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
